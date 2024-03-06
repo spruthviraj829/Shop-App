@@ -14,9 +14,9 @@ const Cart = () => {
     }, [cart]);
 
     return (
-        <div className='mt-20 w-[65%] mx-auto  mb-12 '>
+        <div className='mt-20 w-[65%] mx-auto  mb-12 relative '>
             {cart.length > 0 ? (
-                <div className='flex sm:flex-col xs:flex-col sm:mx-auto lg:flex-row gap-10 relative'>
+                <div className='flex sm:flex-col flex-col mx-auto  xs:flex-col lg:flex-row gap-10 '>
 
                 <div className='flex gap-5 w-[60%] flex-col  '>
                     {cart.map(item => (
@@ -24,7 +24,7 @@ const Cart = () => {
                     ))}
                 </div>
 
-             <div className='flex flex-col  text-left mt-10 w-[40%] gap-10  lg:fixed -right-1 '>
+             <div className='flex flex-col  text-left mt-10 w-[40%] gap-10 xs: lg:fixed -right-1 '>
              <div>
                     <div className='text-green-600 uppercase font-bold'>Your Cart</div>
                     <div className='text-green-600 uppercase font-bold text-3xl'>Summary</div>
